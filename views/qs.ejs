@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+</head>
+
+<body id="qst">
+  <% for(var index = 0; index<locals.no ;index++ ) { %>
+    <form id="form" action="/submitans" method="POST" >
+    <h1 id="ques"><%=qs[index] %></h1>
+      <ol type="A">
+        <li id="A"><%= opt[index][0]%></li>
+        <li id="B"><%= opt[index][1]%></li>
+        <li id="C"><%= opt[index][2]%></li>
+        <li id="D"><%= opt[index][3]%></li><br></ol>
+        <input type="text" name="ans" placeholder="Enter Option">
+        
+      <button type="Submit"> Submit </button>  
+    </form>
+    <br><br>
+
+<% } %> 
+</body>  
+</html>

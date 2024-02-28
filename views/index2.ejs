@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+</head>
+<body> 
+  <% for(var index = 0; index <locals.no ;index++ ) { %>
+  <form id="form" action="/submitqs" method="POST" >
+    
+    <input type="text" name="q" class="qs" placeholder="Question">
+    <input type="text" name="optA" class="opt" placeholder="Option A">
+    <input type="text" name="optB" class="opt" placeholder="Option B">
+    <input type="text" name="optC" class="opt" placeholder="Option C">
+    <input type="text" name="optD" class="opt" placeholder="Option D">
+    <input type="text" name="ans" class="ans" placeholder="Answer (eg: A,B,C,D)"><br><br>
+  <input type="Submit" value="Submit">
+  </form>
+  <% } %>
+</body>
+</html>
